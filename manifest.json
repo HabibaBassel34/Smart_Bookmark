@@ -1,0 +1,11 @@
+
+{
+  "manifest_version": 3,
+  "name": "Smart Bookmark Saver",
+  "version": "1.0",
+  "description": "Save and manage bookmarks easily.",
+  "permissions": ["storage", "tabs", "bookmarks"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

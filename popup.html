@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <h2>Smart Bookmarks</h2>
+
+    <!-- Tag selection before saving -->
+    <select id="tagSelect">
+      <option value="Work"> Work</option>
+      <option value="Study"> Study</option>
+      <option value="Shopping"> Shopping</option>
+      <option value="Entertainment"> Entertainment</option>
+      <option value="Other" selected> Other</option>
+    </select>
+
+    <button id="saveBtn">Save Current Tab</button>
+
+    <hr />
+
+    <!-- Filter section -->
+    <label for="filterSelect"><strong>Filter by Tag:</strong></label>
+    <select id="filterSelect">
+      <option value="All">All</option>
+      <option value="Work">Work</option>
+      <option value="Study">Study</option>
+      <option value="Shopping">Shopping</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <ul id="bookmarkList"></ul>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

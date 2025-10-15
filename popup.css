@@ -1,0 +1,122 @@
+/* General popup layout */
+body {
+  width: 320px;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 12px;
+  background: #f7f9fc;
+  color: #222;
+}
+
+/* Save button */
+#saveBtn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#saveBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdowns for tag and filter */
+select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 14px;
+}
+
+/* Bookmark list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.bookmark-item {
+  margin-bottom: 10px;
+}
+
+.bookmark-card {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.bookmark-card img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.bookmark-card .info {
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+.bookmark-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.bookmark-card a:hover {
+  text-decoration: underline;
+}
+
+.meta {
+  font-size: 11px;
+  color: #555;
+  margin: 2px 0 0 0;
+}
+
+/* Tag style */
+.tag {
+  background-color: #eee;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  margin-right: 6px;
+  text-transform: capitalize;
+}
+
+/* Example tag colors */
+.tag.work { background-color: #ffb84d; }
+.tag.study { background-color: #5cb85c; color: white; }
+.tag.fun { background-color: #5bc0de; color: white; }
+
+/* Delete button */
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.2);
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+  padding: 20px;
+}
